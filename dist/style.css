@@ -1,0 +1,69 @@
+.container {
+  background-color: bisque;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.todo-item {
+  background-color: coral;
+  max-width: 300px;
+  min-width: 200px;
+  margin: 10px;
+  height: 150px;
+  text-align: center;
+  padding: 5px;
+}
+
+.todo-title {
+  background-color: darksalmon;
+  margin: 5px 0px 5px 0px;
+  font-size: 1.5em;
+}
+
+.todo-description {
+  background-color: darksalmon;
+  margin: 5px 0px 5px 0px;
+  font-size: 1em;
+  word-wrap: break-word;
+}
+
+.todo-dueDate {
+  background-color: darksalmon;
+  margin: 5px 0px 5px 0px;
+  font-size: 1em;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: khaki;
+}
+
+.header-title {
+  background-color: darkseagreen;
+}
+
+.header-buttonAddToDo {
+  background-color: lightcoral;
+  width: 200px;
+  justify-self: right;
+}
+
+.overlay-addTodoForm {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+#addTodoForm {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
